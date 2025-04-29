@@ -46,8 +46,6 @@ if not df.empty:
 
     # Gráfico de variação percentual
     st.subheader("📉 Variação Percentual nas Últimas 24h")
-    fig = px.bar(df, x="Nome", y="Variação 24h (%)", color="Variação 24h (%)",
-                 color_continuous_scale=["red", "green"], height=500)
     st.plotly_chart(fig, use_container_width=True)
 
     # Última atualização
